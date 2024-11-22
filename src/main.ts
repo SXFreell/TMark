@@ -1,15 +1,14 @@
-import { createApp } from "vue";
-// 全局样式
-import "@/assets/styles/index.scss";
-// Vue Router
-import router from "./routers";
-// Arco Design Vue
-import ArcoVue from "@arco-design/web-vue";
-// Arco Design CSS
-import "@arco-design/web-vue/dist/arco.css";
-// Arco Design Icon
-import ArcoVueIcon from "@arco-design/web-vue/es/icon";
+import './assets/main.css'
 
-import App from "./App.vue";
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 
-createApp(App).use(router).use(ArcoVue).use(ArcoVueIcon).mount("#app");
+import App from './App.vue'
+import router from './router'
+
+const app = createApp(App)
+
+app.use(createPinia())
+app.use(router)
+
+app.mount('#app')
