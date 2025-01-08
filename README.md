@@ -1,39 +1,84 @@
-# ptmark
+# TMark - 网页书签管理工具
 
-This template should help get you started developing with Vue 3 in Vite.
+TMark 是一个基于 Vue 3 和 IndexedDB 的网页书签管理工具，旨在为用户提供一个简洁、高效的书签管理体验。
 
-## Recommended IDE Setup
+## 功能特性
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- 📁 多层级文件夹管理
+- 🔖 书签添加与编辑
+- 🔄 实时同步与更新
+- 📱 移动端优化
+- 🌙 主题颜色自定义
+- 🛠️ PWA 支持
 
-## Type Support for `.vue` Imports in TS
+## 技术栈
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- **前端框架**: Vue 3
+- **UI 组件库**: Arco Design Vue
+- **状态管理**: Pinia
+- **路由**: Vue Router
+- **数据库**: IndexedDB
+- **构建工具**: Vite
+- **代码规范**: ESLint + Prettier
 
-## Customize configuration
+## 项目结构
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+```
+src/
+├── assets/ # 静态资源
+├── components/ # 公共组件
+├── views/ # 页面视图
+├── router/ # 路由配置
+├── utils/ # 工具函数
+├── api/ # API 接口
+├── hooks/ # 自定义 hooks
+├── App.vue # 根组件
+└── main.ts # 入口文件
+```
 
-## Project Setup
+## 快速开始
 
-```sh
+### 安装依赖
+
+```bash
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+### 开发模式
 
-```sh
+```bash
 pnpm dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### 生产构建
 
-```sh
+```bash
 pnpm build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
+### 代码检查
+```bash
 pnpm lint
 ```
+
+### 代码格式化
+```bash
+pnpm format
+```
+
+## 浏览器支持
+
+- Chrome 最新版
+- Firefox 最新版
+- Edge 最新版
+- Safari 最新版
+
+## 贡献指南
+
+欢迎提交 Issue 和 PR，贡献代码前请确保：
+
+1. 代码风格符合项目规范
+2. 通过所有测试
+3. 更新相关文档
+
+## 许可证
